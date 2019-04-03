@@ -32,6 +32,13 @@ items = {
                    'pistol_riven_mod_(veiled)', 'kitgun_riven_mod_(veiled)', 'shotgun_riven_mod_(veiled)'],
     "silver_grove": ['empowered_blades', 'growing_power'],
     # end mods; start warframes
+
+    "all_warframes_prime": ['ash_prime_set', 'banshee_prime_set', 'chroma_prime_set', 'ember_prime_set',
+                            'equinox_prime_set', 'frost_prime_set', 'hydroid_prime_set', 'limbo_prime_set',
+                            'loki_prime_set', 'mag_prime_set', 'mesa_prime_set', 'mirage_prime_set', 'nekros_prime_set',
+                            'nova_prime_set', 'nyx_prime_set', 'oberon_prime_set', 'rhino_prime_set', 'saryn_prime_set',
+                            'trinity_prime_set', 'valkyr_prime_set', 'vauban_prime_set', 'volt_prime_set',
+                            'zephyr_prime_set'],
     "ash_prime": ['ash_prime_blueprint', 'ash_prime_systems', 'ash_prime_neuroptics', 'ash_prime_chassis',
                   'ash_prime_set'],
     "banshee_prime": ['banshee_prime_blueprint', 'banshee_prime_systems', 'banshee_prime_neuroptics',
@@ -40,6 +47,9 @@ items = {
                      'chroma_prime_chassis', 'chroma_prime_set'],
     "ember_prime": ['ember_prime_blueprint', 'ember_prime_systems', 'ember_prime_neuroptics', 'ember_prime_chassis',
                     'ember_prime_set'],
+    "equinox_prime": ['equinox_prime_blueprint', 'equinox_prime_systems', 'equinox_prime_neuroptics',
+                      'equinox_prime_chassis',
+                      'equinox_prime_set'],
     "frost_prime": ['frost_prime_blueprint', 'frost_prime_systems', 'frost_prime_neuroptics', 'frost_prime_chassis',
                     'frost_prime_set'],
     "hydroid_prime": ['hydroid_prime_blueprint', 'hydroid_prime_systems', 'hydroid_prime_neuroptics',
