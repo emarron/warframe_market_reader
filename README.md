@@ -9,13 +9,39 @@ Gets bulk statistics from warframe items on the market. When you want to check t
   - pprime
   - requests
   - tqdm
-
+```
+   pip install git
+   pip install xlsxwriter
+   pip install pprime
+   pip install requests
+   pip install tqdm
+   git clone https://github.com/emarron/warframe_market_reader
+```
+   
 
 # Use!
 
  - run thing.py
  - will request user input, pick from the keys listed in the terminal
- - automatically poops out the items in the keys and their associated volume, minimum, maximum, average, & median from the last hour. 
+ - automatically poops out the items in the keys and their associated volume, minimum, maximum, average, & median from the last hour.
+```
+   cd warframe_market_reader
+   python thing.py
+```
+  programs will then list available user inputs. In example type:
+```
+   corrupted_mods
+```
+  output:
+```
+{'blind_rage': {'avg': 20.0, 'max': 25, 'med': 20, 'min': 15, 'volume': 120},
+ 'fleeting_expertise': {'avg': 28.0, 'max': 40, 'med': 29, 'min': 16, 'volume': 134},
+ 'narrow_minded': {'avg': 25.5, 'max': 35, 'med': 22.0, 'min': 16, 'volume': 100},
+ 'overextended': {'avg': 20.0, 'max': 22, 'med': 20.0, 'min': 18, 'volume': 89},
+ 'transient_fortitude': {'avg': 25.5, 'max': 38, 'med': 25, 'min': 13, 'volume': 71}}
+```
+  also available is an excel sheet. this is output to ./warframe_market_reader/xlsx/warframe_temp.xlsx
+  
 # Things!
  - primed mods! okay primed mods! good primed mods!
  - corrupted mods!
@@ -28,6 +54,34 @@ Gets bulk statistics from warframe items on the market. When you want to check t
  - prime melees!
  - add your own!
  
+ # Modifying the program!
+  To add to the dictonary of user input: You must know the name in warframe market.
+  
+  In example: Cleaving Whirlwind is `https://warframe.market/items/cleaving-whirlwind`, so you have `'cleaving_whirlwind'` for your key.
+  
+  Format: `"key": ['value1','value2',....'value3'],`
+  
+  Here is a simple way to add to the dictonary, open the thing.py in your editor. navigate to `corrupted_mods`.
+```
+  "corrupted_mods": ['blind_rage', 'fleeting_expertise', 'narrow_minded', 'overextended', 'transient_fortitude'],
+  "riven_mods": ['zaw_riven_mod_(veiled)', 'melee_riven_mod_(veiled)', 'rifle_riven_mod_(veiled)',
+                   'pistol_riven_mod_(veiled)', 'kitgun_riven_mod_(veiled)', 'shotgun_riven_mod_(veiled)'],
+```
+  Duplicated corrupted_mods entry:
+```
+  "corrupted_mods": ['blind_rage', 'fleeting_expertise', 'narrow_minded', 'overextended', 'transient_fortitude'],
+  "corrupted_mods": ['blind_rage', 'fleeting_expertise', 'narrow_minded', 'overextended', 'transient_fortitude'],
+  "riven_mods": ['zaw_riven_mod_(veiled)', 'melee_riven_mod_(veiled)', 'rifle_riven_mod_(veiled)',
+                   'pistol_riven_mod_(veiled)', 'kitgun_riven_mod_(veiled)', 'shotgun_riven_mod_(veiled)'],
+``` 
+  Replace with desired key and values:
+```
+  "corrupted_mods": ['blind_rage', 'fleeting_expertise', 'narrow_minded', 'overextended', 'transient_fortitude'],
+  "poe_fish_rare": ['murkray', 'norg', 'cuthol', 'glappid'],
+  "riven_mods": ['zaw_riven_mod_(veiled)', 'melee_riven_mod_(veiled)', 'rifle_riven_mod_(veiled)',
+                   'pistol_riven_mod_(veiled)', 'kitgun_riven_mod_(veiled)', 'shotgun_riven_mod_(veiled)'],
+```
+
 **Free Software, Hell Yeah!**
 
 # Credit!
