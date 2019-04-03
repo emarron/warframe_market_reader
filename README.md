@@ -6,13 +6,11 @@ Gets bulk statistics from warframe items on the market. When you want to check t
 
   - python 3.7
   - xlsxwriter
-  - pprime
   - requests
   - tqdm
 ```
    pip install git
    pip install xlsxwriter
-   pip install pprime
    pip install requests
    pip install tqdm
    git clone https://github.com/emarron/warframe_market_reader
