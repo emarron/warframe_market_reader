@@ -41,6 +41,7 @@ Gets bulk statistics from warframe items on the market. When you want to check t
  'transient_fortitude': {'avg': 25.5, 'max': 38, 'med': 25, 'min': 13, 'volume': 71}}
 ```
   also available is an excel sheet. this is output to ./warframe_market_reader/xlsx/warframe_temp.xlsx
+  ![excel](https://i.imgur.com/1kcs8Xm.png "excel")
   
 # Things!
  - primed mods! okay primed mods! good primed mods!
