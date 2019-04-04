@@ -42,11 +42,10 @@ Gets bulk statistics from warframe items on the market. When you want to check t
   ![excel](https://i.imgur.com/1kcs8Xm.png "excel")
   
 # Things!
- - primed mods! okay primed mods! good primed mods!
+ - primed mods!
  - corrupted mods!
  - riven mods!
- - baro mods!
- - silver grove mods!
+ - nightmare mods!
  - prime warframes!
  - prime primaries!
  - prime secondaries!
@@ -60,24 +59,27 @@ Gets bulk statistics from warframe items on the market. When you want to check t
   
   Format: `"key": ['value1','value2',....'value3'],`
   
-  Here is a simple way to add to the dictonary, open the thing.py in your editor. navigate to `corrupted_mods`.
+  Here is a simple way to add to the dictonary, open the thing.py in your editor. navigate to `riven_mods`.
 ```
-  "corrupted_mods": ['blind_rage', 'fleeting_expertise', 'narrow_minded', 'overextended', 'transient_fortitude'],
-  "riven_mods": ['zaw_riven_mod_(veiled)', 'melee_riven_mod_(veiled)', 'rifle_riven_mod_(veiled)',
+    "nightmare_mods": lst_nightmare_mods,
+    # the names for these were weird so I did it manually.
+    "riven_mods": ['zaw_riven_mod_(veiled)', 'melee_riven_mod_(veiled)', 'rifle_riven_mod_(veiled)',
                    'pistol_riven_mod_(veiled)', 'kitgun_riven_mod_(veiled)', 'shotgun_riven_mod_(veiled)'],
 ```
-  Duplicated corrupted_mods entry:
+  Duplicated `riven_mods` entry:
 ```
-  "corrupted_mods": ['blind_rage', 'fleeting_expertise', 'narrow_minded', 'overextended', 'transient_fortitude'],
-  "corrupted_mods": ['blind_rage', 'fleeting_expertise', 'narrow_minded', 'overextended', 'transient_fortitude'],
-  "riven_mods": ['zaw_riven_mod_(veiled)', 'melee_riven_mod_(veiled)', 'rifle_riven_mod_(veiled)',
+    "nightmare_mods": lst_nightmare_mods,
+    # the names for these were weird so I did it manually.
+    "riven_mods": ['zaw_riven_mod_(veiled)', 'melee_riven_mod_(veiled)', 'rifle_riven_mod_(veiled)',
+                   'pistol_riven_mod_(veiled)', 'kitgun_riven_mod_(veiled)', 'shotgun_riven_mod_(veiled)'],
+    "riven_mods": ['zaw_riven_mod_(veiled)', 'melee_riven_mod_(veiled)', 'rifle_riven_mod_(veiled)',
                    'pistol_riven_mod_(veiled)', 'kitgun_riven_mod_(veiled)', 'shotgun_riven_mod_(veiled)'],
 ``` 
   Replace with desired key and values:
 ```
-  "corrupted_mods": ['blind_rage', 'fleeting_expertise', 'narrow_minded', 'overextended', 'transient_fortitude'],
-  "poe_fish_rare": ['murkray', 'norg', 'cuthol', 'glappid'],
-  "riven_mods": ['zaw_riven_mod_(veiled)', 'melee_riven_mod_(veiled)', 'rifle_riven_mod_(veiled)',
+    "nightmare_mods": lst_nightmare_mods,
+    "poe_fish_rare": ['murkray', 'norg', 'cuthol', 'glappid'],
+    "riven_mods": ['zaw_riven_mod_(veiled)', 'melee_riven_mod_(veiled)', 'rifle_riven_mod_(veiled)',
                    'pistol_riven_mod_(veiled)', 'kitgun_riven_mod_(veiled)', 'shotgun_riven_mod_(veiled)'],
 ```
 
