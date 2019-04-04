@@ -55,7 +55,7 @@ Gets bulk statistics from warframe items on the market. When you want to check t
  # Modifying the program!
   To add to the dictonary of user input: You must know the name in warframe market.
   
-  In example: Cleaving Whirlwind is `https://warframe.market/items/cleaving-whirlwind`, so you have `'cleaving_whirlwind'` for your key.
+  In example: Cleaving Whirlwind is `https://warframe.market/items/cleaving_whirlwind`, so you have `'cleaving_whirlwind'` for your key.
   
   Format: `"key": ['value1','value2',....'value3'],`
   
@@ -87,6 +87,8 @@ Gets bulk statistics from warframe items on the market. When you want to check t
 
 # Credit!
  - [[DAVID]](https://github.com/dsluo), lots of help. ten out of tenno.
+ - Warframe.Market, Duh
+ - [[WFCD]](https://github.com/WFCD), for the [warframe-items: dictionary](https://github.com/WFCD/warframe-items)
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
